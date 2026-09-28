@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Faisal & Adam</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADING -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">RPL<span>.</span></div>
+        <div class="loader-line">
+            <div></div>
+        </div>
+        <p>Loading Portfolio...</p>
+    </div>
+
+
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="particles" id="particles"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="logo">
+            RPL<span>.</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-badge">
+                <span></span>
+                AVAILABLE FOR CREATIVE PROJECT
+            </div>
+
+            <p class="hero-small">
+                HELLO, WE ARE
+            </p>
+
+            <h1>
+                <span class="gradient-text">Faisal</span>
+                &
+                <span class="gradient-text">Adam</span>
+            </h1>
+
+            <h2>
+                <span id="typing"></span>
+                <span class="typing-cursor">|</span>
+            </h2>
+
+            <p class="hero-description">
+                Kami adalah siswa Rekayasa Perangkat Lunak yang
+                tertarik dengan dunia frontend development,
+                programming, dan teknologi.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary">
+                    Explore Project
+                    <span>↗</span>
+                </a>
+
+                <a href="#about" class="btn secondary">
+                    About Us
+                </a>
+
+            </div>
+
+            <div class="hero-social">
+
+                <span>FOLLOW OUR JOURNEY</span>
+
+                <div class="social-line"></div>
+
+                <a href="#contact">01</a>
+                <a href="#contact">02</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO PHOTO -->
+        <div class="hero-visual reveal">
+
+            <div class="visual-orbit orbit-1"></div>
+            <div class="visual-orbit orbit-2"></div>
+
+            <div class="floating-tag tag-1">
+                &lt;/&gt;
+            </div>
+
+            <div class="floating-tag tag-2">
+                JS
+            </div>
+
+            <div class="hero-photo">
+
+                <div class="photo-glow"></div>
+
+                <img src="faisal basri.jpeg" alt="Faisal">
+                <img src="adam firdaus.jpeg" alt="Adam">
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="mini-dot"></div>
+
+                <div>
+                    <strong>RPL STUDENT</strong>
+                    <small>Frontend Developer</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+
+        <div class="section-heading reveal">
+
+            <span>01 — ABOUT US</span>
+
+            <h2>
+                Building ideas into
+                <strong>digital experience.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p>
+                    Kami merupakan siswa jurusan Rekayasa Perangkat
+                    Lunak yang sedang mengembangkan kemampuan
+                    dalam bidang pemrograman dan pembuatan website.
+                </p>
+
+                <p>
+                    Melalui berbagai project, kami belajar bagaimana
+                    membuat website yang menarik, responsive,
+                    interaktif, dan mudah digunakan.
+                </p>
+
+                <div class="about-number">
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Members</span>
+                    </div>
+
+                    <div>
+                        <strong>03+</strong>
+                        <span>Projects</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Skills</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE CARDS -->
+            <div class="profile-wrapper reveal">
+
+                <div class="profile-card tilt">
+
+                    <div class="profile-image">
+
+                        <img src="faisal basri.jpeg" alt="Faisal Basri">
+
+                        <button
+                            onclick="openImage('faisal basri.jpeg','Faisal Basri')">
+                            VIEW
+                        </button>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span>01</span>
+
+                        <h3>Faisal Basri</h3>
+
+                        <p>RPL Student</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-card tilt">
+
+                    <div class="profile-image">
+
+                        <img src="adam firdaus.jpeg" alt="Adam Firdaus">
+
+                        <button
+                            onclick="openImage('adam firdaus.jpeg','Adam Firdaus')">
+                            VIEW
+                        </button>
+
+                    </div>
+
+                    <div class="profile-info">
+
+                        <span>02</span>
+
+                        <h3>Adam Firdaus</h3>
+
+                        <p>RPL Student</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+
+        <div class="section-heading center reveal">
+
+            <span>02 — OUR SKILLS</span>
+
+            <h2>
+                Tools we use to
+                <strong>create.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal tilt">
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>HTML</h3>
+
+                <p>
+                    Membuat struktur website yang
+                    terorganisir dan semantic.
+                </p>
+
+                <div class="skill-progress">
+
+                    <div
+                        class="progress"
+                        data-width="90">
+                    </div>
+
+                </div>
+
+                <span class="skill-percent">90%</span>
+
+            </div>
+
+
+            <div class="skill-card reveal tilt">
+
+                <div class="skill-icon">
+                    #
+                </div>
+
+                <h3>CSS</h3>
+
+                <p>
+                    Membuat tampilan website
+                    modern dan responsive.
+                </p>
+
+                <div class="skill-progress">
+
+                    <div
+                        class="progress"
+                        data-width="85">
+                    </div>
+
+                </div>
+
+                <span class="skill-percent">85%</span>
+
+            </div>
+
+
+            <div class="skill-card reveal tilt">
+
+                <div class="skill-icon">
+                    JS
+                </div>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Membuat website menjadi
+                    interaktif dan dinamis.
+                </p>
+
+                <div class="skill-progress">
+
+                    <div
+                        class="progress"
+                        data-width="75">
+                    </div>
+
+                </div>
+
+                <span class="skill-percent">75%</span>
+
+            </div>
+
+
+            <div class="skill-card reveal tilt">
+
+                <div class="skill-icon">
+                    ☕
+                </div>
+
+                <h3>Java</h3>
+
+                <p>
+                    Membuat program dan memahami
+                    dasar pemrograman.
+                </p>
+
+                <div class="skill-progress">
+
+                    <div
+                        class="progress"
+                        data-width="70">
+                    </div>
+
+                </div>
+
+                <span class="skill-percent">70%</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+
+        <div class="section-heading reveal">
+
+            <span>03 — SELECTED PROJECTS</span>
+
+            <h2>
+                Things we have
+                <strong>created.</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <!-- PROJECT 1 -->
+            <article
+                class="project-card reveal tilt"
+                onclick="openProject(
+                'Flowgorithm',
+                'flowgorithm.jpg',
+                'Project flowchart untuk menghitung luas persegi panjang menggunakan Flowgorithm.'
+                )">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-image">
+
+                    <img
+                        src="flowgorithm.jpeg"
+                        alt="Flowgorithm">
+
+                </div>
+ 
+                <div class="project-content">
+
+                    <span>FLOWCHART</span>
+
+                    <h3>Flowgorithm</h3>
+
+                    <p>
+                        Flowchart perhitungan luas
+                        persegi panjang.
+                    </p>
+
+                    <div class="project-link">
+                        VIEW PROJECT →
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article
+                class="project-card reveal tilt"
+                onclick="openProject(
+                'Java Programming',
+                'java.jpg',
+                'Project pemrograman Java menggunakan NetBeans untuk membuat program sederhana.'
+                )">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-image">
+
+                    <img
+                        src="java.jpeg"
+                        alt="Java">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span>PROGRAMMING</span>
+
+                    <h3>Java Programming</h3>
+
+                    <p>
+                        Project belajar dasar
+                        pemrograman Java.
+                    </p>
+
+                    <div class="project-link">
+                        VIEW PROJECT →
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article
+                class="project-card reveal tilt"
+                onclick="openProject(
+                'HTML Website',
+                'html.jpg',
+                'Project website menggunakan HTML dan CSS dengan tampilan responsive.'
+                )">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-image">
+
+                    <img
+                        src="html.jpeg"
+                        alt="HTML">
+
+                </div>
+
+                <div class="project-content">
+
+                    <span>WEB DEVELOPMENT</span>
+
+                    <h3>HTML Website</h3>
+
+                    <p>
+                        Membuat website sederhana
+                        menggunakan HTML dan CSS.
+                    </p>
+
+                    <div class="project-link">
+                        VIEW PROJECT →
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+
+        <div class="contact-box reveal">
+
+            <span>04 — CONTACT</span>
+
+            <h2>
+                Let's create something
+                <strong>awesome.</strong>
+            </h2>
+
+            <p>
+                Terima kasih sudah mengunjungi portfolio kami.
+                Mari terus belajar, berkarya, dan berkembang
+                bersama di dunia teknologi.
+            </p>
+
+            <a href="#home" class="btn primary">
+                Back To Top ↑
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            RPL<span>.</span>
+        </div>
+
+        <p>
+            © 2026 Faisal Basri & Adam Firdaus
+        </p>
+
+        <p>
+            Rekayasa Perangkat Lunak
+        </p>
+
+    </footer>
+
+
+    <!-- IMAGE MODAL -->
+    <div class="modal" id="imageModal">
+
+        <div class="modal-box image-box">
+
+            <button
+                class="modal-close"
+                onclick="closeImage()">
+                ×
+            </button>
+
+            <img id="modalImage" src="" alt="">
+
+            <h3 id="modalName"></h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal">
+
+        <div class="modal-box project-box">
+
+            <button
+                class="modal-close"
+                onclick="closeProject()">
+                ×
+            </button>
+
+            <img id="projectImage" src="" alt="">
+
+            <div class="modal-project-content">
+
+                <span>PROJECT</span>
+
+                <h2 id="projectTitle"></h2>
+
+                <p id="projectDescription"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACK TO TOP -->
+    <button id="topButton">
+        ↑
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
